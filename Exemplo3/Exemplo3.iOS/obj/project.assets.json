@@ -987,11 +987,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ISEC\\SAFE\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3.iOS\\Exemplo3.iOS.csproj",
+      "projectUniqueName": "F:\\Documents\\ISEC\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3.iOS\\Exemplo3.iOS.csproj",
       "projectName": "Exemplo3.iOS",
-      "projectPath": "D:\\ISEC\\SAFE\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3.iOS\\Exemplo3.iOS.csproj",
+      "projectPath": "F:\\Documents\\ISEC\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3.iOS\\Exemplo3.iOS.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "D:\\ISEC\\SAFE\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3.iOS\\obj\\",
+      "outputPath": "F:\\Documents\\ISEC\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1012,8 +1012,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\ISEC\\SAFE\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3\\Exemplo3.csproj": {
-              "projectPath": "D:\\ISEC\\SAFE\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3\\Exemplo3.csproj"
+            "F:\\Documents\\ISEC\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3\\Exemplo3.csproj": {
+              "projectPath": "F:\\Documents\\ISEC\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3\\Exemplo3.csproj"
             }
           }
         }

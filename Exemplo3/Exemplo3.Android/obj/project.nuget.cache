@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MOXezFKyG3IRUocRFk/cw8ipFVoQYS+pmxVWS8Xfz2+R9fU/VbhJy5fZc3bseM8z0ns/kzwr03a75NwJzRn+fQ==",
+  "dgSpecHash": "J055RQSI6DcCL1TxhqU2dc6JSto2YA7I8SOfbdRAajKLmNHy+JvXcgf0IpEjfIIf9FS5x3S0im3vN5tk2FzL+A==",
   "success": true,
-  "projectFilePath": "D:\\ISEC\\SAFE\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3.Android\\Exemplo3.Android.csproj",
+  "projectFilePath": "F:\\Documents\\ISEC\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3.Android\\Exemplo3.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

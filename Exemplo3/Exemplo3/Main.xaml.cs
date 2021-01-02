@@ -26,12 +26,12 @@ namespace Exemplo3
 
         private void ToolbarItem_Clicked(object sender, EventArgs e) {
             if (runtask) {
-                //a tarefa esta parada
+                //a tarefa esta parada e mostra botao para iniciar
                 Barra.IconImageSource = ImageSource.FromResource("Exemplo3.Resources.play.ico");
                 runtask = false;
             }
             else{
-                //a tarefa esta a ser executada
+                //a tarefa esta a ser executada e mostra botao para parar
                 Barra.IconImageSource = ImageSource.FromResource("Exemplo3.Resources.stop.ico");
                 runtask = true;
                 //Task tarefa = 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J0KKzEnCado5O5oT+CXhK+ph2JMLqe/xRfF9EOth6lcytzWPBoeHjel8M8b87drs6DTU2+94DWvsR/nZv4VXGQ==",
+  "dgSpecHash": "9C7Gq26Ix5numc4bN4eaE/9D9PvX8Fb8KBXpXkbh3+UehOolsUArDCA9YQCJIKeaxQs4Sf0u+bBOhmL3JRkhqw==",
   "success": true,
-  "projectFilePath": "D:\\ISEC\\SAFE\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3.iOS\\Exemplo3.iOS.csproj",
+  "projectFilePath": "F:\\Documents\\ISEC\\2020_2021\\AM\\XAMARIN\\AMOV_2020_2021_XAMARIN_Exemplo3\\Exemplo3\\Exemplo3.iOS\\Exemplo3.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
