@@ -11,9 +11,17 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout VerticalOptions="StartAndExpand">
+                <Label Text="Valores Iniciais" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="primeiroInicial" Text="primeiroInicial" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="segundoInicial" Text="segundoInicial" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout VerticalOptions="End">
+                <Label Text="Valores Atualizados" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="primeiroIncrementa" Text="{Binding primeiro}" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="segundoDecrementa" Text="{Binding segundo}" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
