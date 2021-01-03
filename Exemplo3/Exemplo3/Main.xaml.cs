@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -14,9 +15,14 @@ namespace Exemplo3
     public partial class Main : ContentPage
     {
         readonly CancellationTokenSource s_cts = new CancellationTokenSource();
+        //private string filename = Path.Combine(Xamarin.Essentials.FileSystem.CacheDirectory, "numeros.txt");
+        private string filename = Path.Combine(Xamarin.Essentials.FileSystem.AppDataDirectory, "numeros.txt");
+
         bool runtask = false;
         int primeiro = 10000;
         int segundo =  99999;
+
+        string numeros_ficheiro;
 
         public Main()
         {
@@ -26,6 +32,8 @@ namespace Exemplo3
             primeiroInicial.Text = primeiro.ToString();
             segundoInicial.Text = segundo.ToString();
 
+            Task.Run(leFicheiro);
+            Task.Run(atualizaUI);
         }
 
         private void ToolbarItem_Clicked(object sender, EventArgs e)
@@ -47,16 +55,21 @@ namespace Exemplo3
             }
         }
 
-        async Task Tarefa()
+async Task Tarefa()
         {
             try
             {
                 while (runtask)
                 {
-                    await Task.WhenAll(Incrementa(), Decrementa());
+                    var tarefaIncrementa = Incrementa();
+                    var tarefaDecrementa = Decrementa();
+                    await Task.WhenAll(tarefaIncrementa, tarefaDecrementa);
+                    await Task.Run(escreveFicheiro);
+                    await Task.Run(leFicheiro);
                     await Task.Run(atualizaUI);
                     Thread.Sleep(1000);
                 };
+                await Task.Run(escreveFicheiro);
             }
             catch
             {
@@ -70,7 +83,27 @@ namespace Exemplo3
                 // UI interaction here
                 primeiroIncrementa.Text = primeiro.ToString();
                 segundoDecrementa.Text = segundo.ToString();
+                numerosFicheiro.Text = numeros_ficheiro;
             });
+            return Task.CompletedTask;
+        }
+        Task leFicheiro()
+        {
+            using (var streamReader = new StreamReader(filename))
+            {
+                string content = streamReader.ReadToEnd();
+                numeros_ficheiro = content.ToString();
+            }
+            return Task.CompletedTask;
+        }
+        Task escreveFicheiro()
+        {
+            using (var sw = new StreamWriter(filename, false))
+            {
+                Console.WriteLine(filename);
+                sw.WriteLine(primeiro);
+                sw.WriteLine(segundo);
+            }
             return Task.CompletedTask;
         }
         Task Incrementa()
@@ -85,47 +118,3 @@ namespace Exemplo3
         }
     }
 }
-
-    /*
-    async Task Incrementa()
-    {
-        await Task.Factory.StartNew(() =>
-        {
-            while (runtask)
-            {
-                if (primeiro > 99999)
-                {
-                    s_cts.Cancel();
-                    //return Task.CompletedTask;
-                }
-                else
-                {
-                    primeiro++;
-                    Console.WriteLine("primeiro: " + primeiro);
-                }
-                System.Threading.Thread.Sleep(1000);
-            };
-        });
-    }
-
-    async Task Decrementa()
-    {
-        await Task.Factory.StartNew(() =>
-        {
-            while (runtask)
-            {
-                if (segundo < 10000)
-                {
-                    s_cts.Cancel();
-                    //return Task.CompletedTask;
-                }
-                else
-                {
-                    segundo--;
-                    Console.WriteLine("segundo: " + segundo);
-                }
-                System.Threading.Thread.Sleep(1000);
-            };
-        });
-    }
-}*/

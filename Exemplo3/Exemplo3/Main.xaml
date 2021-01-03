@@ -11,15 +11,21 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout VerticalOptions="StartAndExpand">
+            <StackLayout VerticalOptions="Start">
                 <Label Text="Valores Iniciais" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
                 <Label x:Name="primeiroInicial" Text="primeiroInicial" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
                 <Label x:Name="segundoInicial" Text="segundoInicial" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
             </StackLayout>
+            
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Valores a ser alterados" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="primeiroIncrementa" Text="segundoDecrementa" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="segundoDecrementa" Text="segundoDecrementa" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+
             <StackLayout VerticalOptions="End">
-                <Label Text="Valores Atualizados" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
-                <Label x:Name="primeiroIncrementa" Text="{Binding primeiro}" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
-                <Label x:Name="segundoDecrementa" Text="{Binding segundo}" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+                <Label Text="Ultimos no Ficheiro" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
+                <Label x:Name="numerosFicheiro" Text="numerosFicheiro" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" />
             </StackLayout>
         </StackLayout>
 
